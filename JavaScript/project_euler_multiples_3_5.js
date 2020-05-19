@@ -7,13 +7,11 @@ ENDFUNC
 function multiples(num) {
     let sum = 0
     for(i=0; i < num; i++){
-        if(i % 5){
-            sum += 5
-        }else if(i % 3){
-            sum += 3
+        if(i % 5 == 0 || i % 3 == 0){
+            sum += i
         }
     }
     return sum
 }
 
-console.log(multiples(1000))
+console.log(multiples(10))
