@@ -6,11 +6,14 @@ ENDFUNC
 
 function multiples(num) {
     let sum = 0
-    if(num < 10000){
-        if(num % 5===0 & num % 3===0){
-            return "hello"
+    for(i=0; i < num; i++){
+        if(i % 5){
+            sum += 5
+        }else if(i % 3){
+            sum += 3
         }
     }
+    return sum
 }
 
 console.log(multiples(1000))
